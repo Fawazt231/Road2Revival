@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Avatar } from 'antd';
 import './Intro.css';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -13,7 +13,7 @@ import omars from '../assets/omars.JPG';
 import kaiser from '../assets/kaiser.jpg';
 import yasmin from '../assets/Yasmin.JPG';
 import food from '../assets/food.png';
-
+import ismael from '../assets/ismael.jpg';
 import qa from '../assets/QA.jpg';
 
 import salah from '../assets/salah.jpg';
@@ -22,9 +22,13 @@ import quran from '../assets/Quran.jpg';
 import registration from '../assets/registration.png';
 import conclusion from '../assets/conclusion.jpg';
 
+import {Tabs, Tab} from 'react-bootstrap';
+import './program.css';
+
+
 const images = [
 	registration,
-	quran,
+	ismael,
 	kaiser,
 	majed,
 	salah, 
@@ -37,13 +41,17 @@ const images = [
 	conclusion
 ];
 const images2 =[
+	registration,
+	quran,
 	ammar,
+	salah,
 	omars,
 	presentation,
-	ahmed,
-	qa,
-	conclusion,
-	salah
+	food, 
+	ahmed, 
+	salah, 
+	ahmed, 
+	conclusion
 ];
 
 const times = [
@@ -75,11 +83,11 @@ const times2 = [
 ];
 
 const events = [
-	'Sign In',
+	'Welcome',
 	'Quran Recitation',
 	'Introduction to Conquering From Within',
 	'Intentions',
-	'Dhuhr Prayer',
+	'Dhuhr Salah',
 	'How to Deal with Hardships',
 	'Islamic Relief USA Presentation',
 	'Break/Lunch',
@@ -89,16 +97,22 @@ const events = [
 	'closing'
 ]
 const events2 = [
-	'Presentation',
-	'Practical Tips to Purify the Heart',
-	'Q&A',
-	'Closing Remarks',
-	'Ishaa Salah'
+	'Welcome',
+	'Quran Recitation',
+	'Relationships with Family Members, Friends, and Others',
+	'Dhuhr Salah',
+	'Conquering From Within', 
+	'Helping Hand Presentation',
+	'Break/Lunch', 
+	'Reaching our Final Destination', 
+	'Asr Salah', 
+	'Q&A', 
+	'Closing'
 ];
 
 const speakers = [
 	'',
-	'Mashhud Hussain',
+	'Shaykh Ismael Essa',
 	'Chaplain Kaiser',
 	'Ustadh Majed Mahmoud',
 	'',
@@ -112,11 +126,16 @@ const speakers = [
 ]
 const speakers2 = [
 	
-	'Dr. Omar Suleiman',
 	'',
-	'Dr. Ahmed Mohammed',
-	'With Dr. Ahmed Mohammed',
-	'Arshad Vohra',
+	'Mashud Hussain',
+	'Shaykh Ammar AlShukri',
+	'',
+	'Dr. Omar Suleiman',
+	'', 
+	'', 
+	'Dr. Ahmed Mohamed',
+	'', 
+	'with Dr. Ahmed Mohamed',
 	''
 ];
 
@@ -140,11 +159,13 @@ class Program extends React.Component {
 		this.setState({ width: window.innerWidth, height: window.innerHeight });
 	}
 
+	
+
 	render() {
 		//
 
 		return (
-			<div>
+			<div>	
 				<div className="container" style={{ height: 250 }}>
 					<img id="gif" alt="example" src={'https://wallpapercave.com/wp/wp3284839.gif'} />
 					<div
@@ -153,55 +174,112 @@ class Program extends React.Component {
 					>
 						Program
 					</div>
-				</div>
-				<div className="container">
-					<div className="container">
-						<VerticalTimeline layout="1-column">
-							{times.map((time, i) => {
-								const event = events[i];
-								const speaker = speakers[i];
-								const image = images[i];
-								let left = -(this.state.width / 10);
-								let size = 0;
-								if (this.state.width >= 1476) {
-									left = -(this.state.width / 10);
-									size = 150;
-								} else if (this.state.width >= 1270) {
-									left = -50;
-									size = 100;
-								} else if (this.state.width >= 1000) {
-									left = -30;
-									size = 80;
-								} else if (this.state.width >= 700) {
-									left = -12;
-									size = 70;
-								} else if (this.state.width >= 500) {
-									left = -12;
-									size = 70;
-								} else {
-									left = -7;
-									size = 60;
-								}
-								return (
-									<VerticalTimelineElement
-										className="vertical-timeline-element--work"
-										contentStyle={{ background: 'white', color: 'black' }}
-										contentArrowStyle={{ borderRight: '7px solid  black' }}
-										date={time}
-										icon={<Avatar size={size} src={image} />}
-										iconStyle={{
-											background: 'white',
-											left: left
-										}}
-									>
-										<h2 style={{ fontSize: '26px', fontWeight: 'bold' }}>{event}</h2>
-										<p>{speaker}</p>
-									</VerticalTimelineElement>
-								);
-							})}
-						</VerticalTimeline>
-						<Footer />
-					</div>
+					<Tabs defaultActiveKey="dayOne">
+            			<Tab eventKey="dayOne" title="Saturday">
+                			<div className="tab-item-wrapper">
+							<VerticalTimeline layout="1-column">
+									{times.map((time, i) => {
+										const event = events[i];
+										const speaker = speakers[i];
+										const image = images[i];
+										let left = -(this.state.width / 10);
+										let size = 0;
+										if (this.state.width >= 1476) {
+											left = -(this.state.width / 10);
+											size = 150;
+										} else if (this.state.width >= 1270) {
+											left = -50;
+											size = 100;
+										} else if (this.state.width >= 1000) {
+											left = -30;
+											size = 80;
+										} else if (this.state.width >= 700) {
+											left = -12;
+											size = 70;
+										} else if (this.state.width >= 500) {
+											left = -12;
+											size = 70;
+										} else {
+											left = -7;
+											size = 60;
+										}
+										return (
+											<VerticalTimelineElement
+												className="vertical-timeline-element--work"
+												contentStyle={{ background: 'white', color: 'black' }}
+												contentArrowStyle={{ borderRight: '7px solid  black' }}
+												date={time}
+												icon={<Avatar size={size} src={image} />}
+												iconStyle={{
+													background: 'white',
+													left: left
+												}}
+											>
+												<h2 style={{ fontSize: '26px', fontWeight: 'bold' }}>{event}</h2>
+												<p>{speaker}</p>
+											</VerticalTimelineElement>
+										);
+									})}
+								</VerticalTimeline>
+								<Footer />
+						
+							</div>
+             			 </Tab>
+
+						<Tab eventKey="dayTwo" title="Sunday">
+							<div className="tab-item-wrapper">
+							<VerticalTimeline layout="1-column">
+									{times2.map((time, i) => {
+										const event = events2[i];
+										const speaker = speakers2[i];
+										const image = images2[i];
+										let left = -(this.state.width / 10);
+										let size = 0;
+										if (this.state.width >= 1476) {
+											left = -(this.state.width / 10);
+											size = 150;
+										} else if (this.state.width >= 1270) {
+											left = -50;
+											size = 100;
+										} else if (this.state.width >= 1000) {
+											left = -30;
+											size = 80;
+										} else if (this.state.width >= 700) {
+											left = -12;
+											size = 70;
+										} else if (this.state.width >= 500) {
+											left = -12;
+											size = 70;
+										} else {
+											left = -7;
+											size = 60;
+										}
+										return (
+											<VerticalTimelineElement
+												className="vertical-timeline-element--work"
+												contentStyle={{ background: 'white', color: 'black' }}
+												contentArrowStyle={{ borderRight: '7px solid  black' }}
+												date={time}
+												icon={<Avatar size={size} src={image} />}
+												iconStyle={{
+													background: 'white',
+													left: left
+												}}
+											>
+												<h2 style={{ fontSize: '26px', fontWeight: 'bold' }}>{event}</h2>
+												<p>{speaker}</p>
+											</VerticalTimelineElement>
+										);
+									})}
+								</VerticalTimeline>
+								<Footer />
+
+							</div>
+						</Tab>
+
+					</Tabs>
+				
+							
 				</div>
 			</div>
 		);
