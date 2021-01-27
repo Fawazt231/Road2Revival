@@ -88,7 +88,7 @@ const events = [
 	'Introduction to Conquering From Within',
 	'Purifying our Intentions',
 	'Dhuhr Salah',
-	'How to Deal with Hardships',
+	'Overcoming Obstacles on our Journey',
 	'Islamic Relief USA Presentation',
 	'Break/Lunch',
 	'Self Love in Islam',
