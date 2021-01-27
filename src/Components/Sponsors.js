@@ -12,8 +12,8 @@ import iscj from '../assets/download.png';
  
 class Sponsors extends React.Component {
     render() {
-        const cardHeightRow1 = 400;
-        const cardHeightRow2 = 400;
+        const cardHeightRow1 = 500;
+        const cardHeightRow2 = 500;
  
         return (
             <div>
@@ -40,7 +40,7 @@ class Sponsors extends React.Component {
                                 }
                                 style={{ margin: 20, height: cardHeightRow1 }}
                             >
-                                <img alt="example" src={ir} style={{ maxWidth: '47.5%', height: '20%' }} />
+                                <img alt="example" src={ir} style={{ maxWidth: '60%', height: '20%' }} />
                                 <Divider dashed>Description</Divider>
  
                                 <p>
@@ -100,7 +100,7 @@ class Sponsors extends React.Component {
                                 }
                                 style={{ margin: 20, height: cardHeightRow2 }}
                             >
-                                <img alt="example" src={iscj} style={{ maxWidth: '30%', height: '40%' }} />
+                                <img alt="example" src={iscj} style={{ maxWidth: '80%', height: '40%' }} />
                                 <Divider dashed>Description</Divider>
  
                                 <p>
