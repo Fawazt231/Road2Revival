@@ -86,12 +86,12 @@ const events = [
 	'Welcome',
 	'Quran Recitation',
 	'Introduction to Conquering From Within',
-	'Intentions',
+	'Purifying our Intentions',
 	'Dhuhr Salah',
 	'How to Deal with Hardships',
 	'Islamic Relief USA Presentation',
 	'Break/Lunch',
-	'Relationship with Oneself and Allah(SWT)',
+	'Self Love in Islam',
 	'Asr Salah',
 	'Q&A',
 	'closing'
@@ -99,7 +99,7 @@ const events = [
 const events2 = [
 	'Welcome',
 	'Quran Recitation',
-	'Relationships with Family Members, Friends, and Others',
+	'Inviting Others on our Journey',
 	'Dhuhr Salah',
 	'Conquering From Within', 
 	'Helping Hand Presentation',
