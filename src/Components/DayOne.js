@@ -90,7 +90,7 @@ const events = [
 	'Relationship with Oneself and Allah(SWT)',
 	'Asr Salah',
 	'Q&A',
-	'closing'
+	'Closing'
 ]
 const events2 = [
 	'Presentation',
