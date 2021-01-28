@@ -20,7 +20,7 @@ export const bioMajed = `
 Majed completed a Bachelor’s in Mechanical Engineering from the University of Windsor, a Bachelor’s in Islamic Studies in Islamic Jurisprudence and Legal Theory from Al-Madinah International University, and a Master’s in Business Administration from Wayne State University. As he travels worldwide lecturing about different aspects of Islam, Majed works full-time as a mechanical engineer and teaches with Al-Maghrib Institute. He currently lives in Michigan with his wife and children.
 `;
 export const bioElmekki = `
-Shaykh Kamal El Mekki has been dubbed the Black Belt of Da‘wah. With decades of experience in the Da‘wah scene, Shaykh Kamal combines his ground-breaking teaching style with his own dash of humor, certain to leave students feel at ease & entertained, but above all skilled and empowered.
+Shaykh Kamal El Mekki has been dubbed the Black Belt of Da‘wah. With decades of experience in the Da‘wah scene, Shaykh Kamal combines his ground-breaking teaching style with his own dash of humor, certain to leave students feeling at ease & entertained, but above all skilled and empowered.
 Shaykh Kamal is known best for his workshop “How to Give Shahadah in 10 Minutes”, a 6-hour workshop designed to empower MSAs and Dawah organizations in the art of Da‘wah. His lectures and online videos (targeting contemporary challenges) have also gained popular fame and positive impact among 
 Muslims and non-Muslims alike. Educated at the hands of numerous prominent Islamic scholars from across the world, Shaykh Kamal also has dynamic experience in the secular world.
 `;
