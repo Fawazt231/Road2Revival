@@ -89,7 +89,7 @@ const events = [
 	'Self Love in Islam',
 	'Asr Salah',
 	'Q&A',
-	'closing'
+	'Closing'
 ]
 const events2 = [
 	'Welcome',
