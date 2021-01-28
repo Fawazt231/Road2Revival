@@ -30,7 +30,7 @@ Yasmin Mogahed has recently published her new book, Love and Happiness, her orig
 University of Wisconsin-Madison. After completing her graduate work, she taught Islamic Studies and got heavily involved in community youth work`;
  
 export const bioKaiser = `
-Chaplain Kaiser Aslam is the Muslim Chaplain at Rutgers University. Kaiser has studied various classical Islamic sciences in his studies within the United States and abroad and holds a Masters degree in Islamic Studies & Muslim-Christian Relations from Hartford Seminary. In addition to his work at universities, Kaiser has served as the Muslim Chaplain at Hartford Hospital and as a youth director at various Islamic centers , most recently at the Farmington Valley American Muslim Center.
+Chaplain Kaiser Aslam is the Muslim Chaplain at Rutgers University. Kaiser has studied various classical Islamic sciences in his studies within the United States and abroad and holds a Masters degree in Islamic Studies & Muslim-Christian Relations from Hartford Seminary. In addition to his work at universities, Kaiser has served as the Muslim Chaplain at Hartford Hospital and as a youth director at various Islamic centers, most recently at the Farmington Valley American Muslim Center.
 `;
  
  
