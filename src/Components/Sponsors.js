@@ -9,6 +9,7 @@ import ir from '../assets/IR.jpg';
 // import shuhada from '../assets/shuhada.png';
 import iscj from '../assets/download.png';
 // import icmc from '../assets/icmc.png';
+import montclairmsa from '../assets/montclairmsa.jpg';
  
 class Sponsors extends React.Component {
     render() {
@@ -111,23 +112,22 @@ class Sponsors extends React.Component {
                             </Card>
                         </Col>
                         <Col xs={24} sm={12} md={12} lg={8}>
-                            {/* <Card
-                                title="Islamic Center of Mercer County"
-                                extra={
-                                    <a href="https://icmcmasjid.org/" target="_blank" rel="noopener noreferrer">
-                                        Website
-                                    </a>
-                                }
+                             <Card
+                                title="Montclair State University Muslim Student Association"
+                                // extra={
+                                //     <a href="https://icmcmasjid.org/" target="_blank" rel="noopener noreferrer">
+                                //         Website
+                                //     </a>
+                                // }
                                 style={{ margin: 20, height: cardHeightRow2 }}
                             >
-                                <img alt="example" src={icmc} style={{ maxWidth: '70%', height: 'auto' }} />
+                                <img alt="example" src={montclairmsa} style={{ maxWidth: '60%', height: '20' }} />
                                 <Divider dashed>Description</Divider>
  
                                 <p>
-                                    The Islamic Circle of Mercer County in Lawrenceville, is a non-profit
-                                    religious/social organization that was initiated and established in 1999/1420.
+                                    The Muslim Student Association of Montclair State University is a Co-Sponsor of Road to Revival.
                                 </p>
-                            </Card> */}
+                            </Card> 
                         </Col>
                         <Col xs={24} sm={12} md={12} lg={8}>
                             {/* <Card
@@ -160,4 +160,3 @@ class Sponsors extends React.Component {
 export default Sponsors;
  
  
-
